@@ -26,6 +26,10 @@ DEFAULT_PAGINATION = 15
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
+EXTRA_PATH_METADATA = {
+    'CNAME': {'path': 'CNAME'},
+}
+
 THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"
 
 # Uncomment following line if you want document-relative URLs when developing
