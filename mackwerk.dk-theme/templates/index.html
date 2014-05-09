@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if articles %}
+        <ul id="blog-posts">
+        {% for article in (articles_page.object_list if articles_page else articles) %}
+            <li class="post-item">
+                <div class="post-title">
+                    <a class="post-link" href="{{ SITEURL }}/{{ article.url }}">
+                        {{ article.title }}
+                    </a>
+                </div>
+                <div class="post-date">{{ article.date|strftime('%B %d - %H:%M') }}</div>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if articles_page and articles_paginator.num_pages > 1 %}
+        <div class="pagination">
+            <ul>
+                {% if articles_page.has_previous() %}
+                    {% set num = articles_page.previous_page_number() %}
+                    <li class="prev"><a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">&larr; Previous</a></li>
+                {% endif %}
+                {% for num in range( 1, 1 + articles_paginator.num_pages ) %}
+                    <li class="{{ 'active' if num == articles_page.number else '' }}">
+                        {% if num == articles_page.number %}
+                            {{ num }}
+                        {% else %}
+                            <a href="{{ SITEURL }}/{{ page_name }}{{ num if num > 1 else '' }}.html">{{ num }}</a>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                {% if articles_page.has_next() %}
+                    <li class="next"><a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">Next &rarr;</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    {% endif %}
+{% endblock %}

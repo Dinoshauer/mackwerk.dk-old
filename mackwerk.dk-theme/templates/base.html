@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>
+            {% block windowtitle %}
+                {{ SITENAME }}
+            {% endblock %}
+        </title>
+
+        <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
+        <link href="{{ SITEURL }}/theme/css/site.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="blog-container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3" id="content-container">
+
+                    {% block content %}
+                    {% endblock %}
+
+                </div><!-- /.blog-main -->
+                {% include "sidebar.html" %}
+            </div><!-- /.row -->
+
+        </div><!-- /.container -->
+    </body>
+</html>
