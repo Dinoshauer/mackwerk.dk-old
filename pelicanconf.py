@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Kasper Jacobsen'
 SITENAME = u'mackwerk.dk'
-SITEURL = ''
+SITEURL = 'http://mackwerk.dk'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -21,7 +21,10 @@ LINKS =  ()
 # Social widget
 SOCIAL = ()
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 15
+
+ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
 THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"
 
