@@ -26,8 +26,9 @@ DEFAULT_PAGINATION = 15
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
 
+STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
-    'CNAME': {'path': 'CNAME'},
+    'extra/CNAME': {'path': 'CNAME'},
 }
 
 THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"
