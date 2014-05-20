@@ -23,8 +23,8 @@ SOCIAL = ()
 
 DEFAULT_PAGINATION = 15
 
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}/index.html'
+ARTICLE_URL = 'posts/{slug}/'
+ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
 
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
