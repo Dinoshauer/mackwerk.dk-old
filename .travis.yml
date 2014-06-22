@@ -1,11 +1,9 @@
 language: python
 env:
 	global:
-		secure: Gpy2eXwef9Ian9I41W3CnNRKwT8RTxuzYfo1guln4fYFOqtJbcWxzXM2cMLG5vOCtwO6QWyMGdgkwWi475e0Ey04z7ik2ziHKbhtTfOT0QviQc5+1jnFpCrAOISaQ4PfH3a8EpfMZoaRU0/8Wedn6l6WsnrLwMlgdEOgwAr9WVM=
+		secure: "Gpy2eXwef9Ian9I41W3CnNRKwT8RTxuzYfo1guln4fYFOqtJbcWxzXM2cMLG5vOCtwO6QWyMGdgkwWi475e0Ey04z7ik2ziHKbhtTfOT0QviQc5+1jnFpCrAOISaQ4PfH3a8EpfMZoaRU0/8Wedn6l6WsnrLwMlgdEOgwAr9WVM="
 branches:
 	only:
-	- master
-install:
-	- pip install -r requirements.txt
-script:
-	- make publish github
+	- "master"
+install: "pip install -r requirements.txt"
+script: "make publish github"
