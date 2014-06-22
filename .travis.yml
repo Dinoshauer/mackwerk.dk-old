@@ -6,4 +6,5 @@ branches:
 	only:
 	- "master"
 install: "pip install -r requirements.txt"
-script: "make publish github"
+script:
+	- "cp extra/CNAME output"
