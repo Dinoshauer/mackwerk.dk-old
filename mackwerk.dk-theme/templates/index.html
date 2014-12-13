@@ -5,9 +5,7 @@
         {% for article in (articles_page.object_list if articles_page else articles) %}
             <li class="post-item">
                 <div class="post-title">
-                    <a class="post-link" href="{{ SITEURL }}/{{ article.url }}">
-                        {{ article.title }}
-                    </a>
+                    <a class="post-link" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
                 </div>
                 <div class="post-date">{{ article.date|strftime('%B %d - %H:%M') }}</div>
             </li>
