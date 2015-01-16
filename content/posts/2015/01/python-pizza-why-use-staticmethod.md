@@ -73,7 +73,7 @@ def _calculate_slices(size):
     return area / size
 
 
-class Pizza(object):
+class MyPizza(object):
     def __init__(self, size, toppings):
         self.size = size
         self.toppings = toppings
