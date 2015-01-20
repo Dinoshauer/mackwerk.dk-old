@@ -2,9 +2,15 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+
 AUTHOR = u'Kasper Jacobsen'
 SITENAME = u'mackwerk.dk'
-SITEURL = ''
+
+SITEURL = 'http://mackwerk.dk'
+
+if os.environ.get('DEV'):
+    RELATIVE_URLS = True
 
 TIMEZONE = 'Europe/Paris'
 
@@ -24,6 +30,3 @@ EXTRA_PATH_METADATA = {
 }
 
 THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
