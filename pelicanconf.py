@@ -11,15 +11,7 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-
-# Blogroll
-LINKS =  ()
-
-# Social widget
-SOCIAL = ()
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
 DEFAULT_PAGINATION = 15
 
