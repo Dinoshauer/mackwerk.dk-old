@@ -6,7 +6,7 @@ Slug: dotci-jenkins-intro
 Author: Kasper Jacobsen
 Summary: -
 
-This is part 1 of (atleast 3, hopefully 4) in a series of posts I'm going to be writing up on using the DotCI plugin with JenkinsCI. I realized while writing up another post (it'll be part 3 of this series).
+This is part 1 of (atleast 3, hopefully 4) in a series of posts I'm going to be writing up on using the DotCI plugin with JenkinsCI. I realized while writing up another post (it'll be part 3 of this series) that this should be a series of posts or it's going to turn in to a very long rant looking wall of text.
 
 I maintain the CI server and design deploy flows at Falcon Social, we use JenkinsCI and it's awesome. It has helped us come a long way already, with push-button deploys, pipelines and the works.
 
