@@ -33,7 +33,7 @@ Key features:
 
 Great! So now we have something like [TravisCI][3] but for [JenkinsCI][2] users!
 
-Stay tuned for part 2 - Getting JenkinsCI ready for the DotCI plugin
+Stay tuned for [part 2](../dotci-jenkins-setup) - Getting JenkinsCI ready for the DotCI plugin
 
 [1]: https://falconsocial.com/          "Falcon Social"
 [2]: http://jenkins-ci.org/             "JenkinsCI"
