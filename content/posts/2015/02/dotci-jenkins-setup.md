@@ -66,6 +66,21 @@ MongoDB doesn't provide a script that you can download and run automatically, so
 
 MongoDB is now running, there are no extra setup steps for Jenkins to access the database.
 
+## Installing and setting up DotCI
+
+Setting up DotCI is just as easy as installing MongoDB, probably easier. They also provide an [installation guide on their repo.][4-1] I'll outline the steps for good measure.
+
+1. Install the DotCI plugin from the Jenkins Update Center and restart Jenkins
+2. You already got MongoDB installed (go preparation!)
+3. You're going to need to set up a [GitHub application][5]
+    * **Note:** Authorization callback URL needs to be `<YOUR-JENKINS-URL>/dotci/finishLogin`
+    * keep the ClientID and secret handy for the next step.
+4. Go to Manage Jenkins -> Global System Configuration and scroll down to the DotCI Configuration section
+    * Set the default build type to `Docker`
+
+Done!
+
+
 Stay tuned for part 3! Using DotCI with private repositories.
 
 
@@ -74,3 +89,5 @@ Stay tuned for part 3! Using DotCI with private repositories.
 [2-1]: https://docs.docker.com/installation/ubuntulinux/                    "Docker installation guide"
 [3]: https://www.mongodb.org/                                               "MongoDB"
 [3-1]: http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/   "MongoDB installation guide"
+[4-1]: https://github.com/groupon/DotCi/blob/master/docs/Installation.md    "DotCI installation guide"
+[5]: https://github.com/settings/applications/new                           "New GitHub application"
