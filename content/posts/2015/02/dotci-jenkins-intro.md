@@ -10,7 +10,9 @@ Summary: -
 
 I maintain the CI server and design deploy flows at [Falcon Social][1], we use [JenkinsCI][2] and it's awesome. It has helped us come a long way already, with push-button deploys, pipelines and the works.
 
-I've used [TravisCI][3] for open source projects at Falcon and my own projects all run tests with Travis, it's a great product, and the ease of use and setup it brings with it is pretty much unrivaled when comparing Travis to Jenkins.
+I'm looking at creating **a lot** of builds for one of our sections in the product as we're in the process of moving into a more microservice oriented infrastructure, it means splitting some things up into smaller packages that does one thing well.
+
+I've used [TravisCI][3] for open source projects at Falcon and my own projects all run tests with Travis, it's a great product, and the ease of use and setup it brings with it is pretty much unrivaled when comparing Travis to Jenkins. Naturally, I would love to see Jenkins being able to make builds on the fly, like Travis.
 
 [DotCI][4] is a project made by Groupon, it aims to make it *really* easy to test your code and push the result of the build to a GitHub commit so you can see the build status on the commit.
 
