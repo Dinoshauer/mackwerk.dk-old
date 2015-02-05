@@ -77,6 +77,7 @@ Setting up DotCI is just as easy as installing MongoDB, probably easier. They al
     * keep the ClientID and secret handy for the next step.
 4. Go to Manage Jenkins -> Global System Configuration and scroll down to the DotCI Configuration section
     * Set the default build type to `Docker`
+    * **Note:** If you want to access private repositories, make sure to check the `Enable private repository support` checkbox, or DotCI won't ask for the correct permissions when authorizing your GitHub application
 
 Done!
 
