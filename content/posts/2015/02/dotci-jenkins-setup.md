@@ -1,5 +1,5 @@
 Title: JenkinsCI + dotCI - Setup
-Date: 2015-02-04 21:50
+Date: 2015-02-05 07:30
 Tags: JenkinsCI, CI, dotCI,
 Category: CI
 Slug: dotci-jenkins-setup
