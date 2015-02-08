@@ -27,6 +27,7 @@ ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
 THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"

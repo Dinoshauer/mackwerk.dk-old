@@ -103,6 +103,7 @@ cf_upload: publish
 
 github: publish
 	cp extra/CNAME output
+	cp extra/favicon.ico output
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
