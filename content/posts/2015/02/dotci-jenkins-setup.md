@@ -82,7 +82,7 @@ Setting up DotCI is just as easy as installing MongoDB, probably easier. They al
 Done!
 
 
-Stay tuned for part 3! Using DotCI with private repositories.
+Stay tuned for [part 3](../dotci-jenkins-private-repos)! Using DotCI with private repositories.
 
 
 [1]: https://github.com/groupon/dotCI                                       "DotCI @ GitHub"
