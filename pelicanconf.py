@@ -30,4 +30,4 @@ EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
-THEME = "/home/k/git/mackwerk.dk/mackwerk.dk-theme"
+THEME = os.path.join(os.getcwd(), 'mackwerk.dk-theme')
