@@ -5,4 +5,7 @@ branches:
 install:
   - pip install -r requirements.txt
 script:
-  - make publish github
+  - make publish github-ci
+env:
+  global:
+    secure: ZFugXxU12LziHMdiG7RH1mLWwAVwWIdKcSf7JX0zjHU6yQ4hNypdNreJkUrlXuXM+641aZxHcUprGNTNEzrncE+axxXpO5x8NEsaXxFw4GtHWeVfrQn/1Hg7R3X26HXukQBDhvIh0hA4UXtDsZXbL8+GCzEIgea/PcrLve1uAWQ=
