@@ -52,7 +52,7 @@ We'll go through it one file at a time. Let's start at the top.
     you're going to be using the ``Dockerfile`` style builds with DotCI
 
 ```
-    cat ~/dotci/base/docker 
+    cat ~/dotci/base/docker
     #!/bin/bash
 
     # Source:
@@ -80,7 +80,7 @@ We'll go through it one file at a time. Let's start at the top.
     2. Then we copy in our resources
 
 ```
-    cat ~/dotci/base/Dockerfile 
+    cat ~/dotci/base/Dockerfile
     FROM debian:stable
 
     RUN apt-get update \
@@ -97,7 +97,7 @@ We'll go through it one file at a time. Let's start at the top.
     credentials in a file. Crucial!
 
 ```
-    cat ~/dotci/base/gitconfig 
+    cat ~/dotci/base/gitconfig
     [credential]
         helper = store
 ```
@@ -106,7 +106,7 @@ We'll go through it one file at a time. Let's start at the top.
     file to your SCM!
 
 ```
-    cat ~/dotci/base/git-credentials 
+    cat ~/dotci/base/git-credentials
     https://<OAUTH-TOKEN>:x-oauth-basic@github.com
 ```
 
@@ -115,8 +115,8 @@ one for all your needs, and you're able to clone private repositories!
 
 Many thanks to my colleague [@Tenzer][5] for his great help with this step.
 
-Stay tuned for part 4! Running jobs and archiving artifacts and publishing
-test results.
+Stay tuned for [part 4](../dotci-jenkins-publish-archive)! Running jobs and
+archiving artifacts and publishing test results.
 
 [1]: https://github.com/joeandaverde                            "Joe Andaverde @ GitHub.com"
 [2]: https://github.com/groupon/DotCi/issues/103                "Unable to authenticate with private Github repo - fails build every time #103"
