@@ -102,13 +102,15 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	cp extra/CNAME output
-	cp extra/favicon.ico output
+	cp extra/CNAME $(OUTPUTDIR)
+	cp extra/favicon.ico $(OUTPUTDIR)
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
 github-ci: publish
+	cp extra/CNAME $(OUTPUTDIR)
+	cp extra/favicon.ico $(OUTPUTDIR)
 	ghp-import -n $(OUTPUTDIR)
-	@git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
+	git push -fq https://${GH_TOKEN}@github.com/$(TRAVIS_REPO_SLUG).git gh-pages > /dev/null
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
