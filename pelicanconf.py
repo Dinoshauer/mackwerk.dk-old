@@ -24,7 +24,7 @@ DEFAULT_PAGINATION = 15
 ARTICLE_URL = 'posts/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{slug}/index.html'
 
-STATIC_PATHS = ['extra/CNAME']
+STATIC_PATHS = ['extra/CNAME', 'images']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     'extra/favicon.ico': {'path': 'favicon.ico'}
